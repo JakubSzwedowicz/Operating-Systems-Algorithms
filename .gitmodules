@@ -1,0 +1,3 @@
+[submodule "Disk_Scheduler/tests/googletest"]
+	path = Disk_Scheduler/tests/googletest
+	url = https://github.com/google/googletest/
