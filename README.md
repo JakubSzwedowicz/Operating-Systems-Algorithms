@@ -27,6 +27,7 @@ It's a simulation of various disk scheduling algorithms such as:
 * SSTF
 * SCAN
 * C-SCAN
+
 The environment within the project takes under the consideration the way the hard drive is built, operates and behaves, which includes:
 * physical construction (blocks, tracks, plates, heads) and its requirenments such as for example:
 	* plausible size of blocks,
