@@ -5,6 +5,7 @@ They are written in Java and CPP+17 without any particular order.
 # Projects
 1. CPU Scheduler,
 2. Disk Scheduling algorithms
+3. Paging Algorithms
 
 ## CPU Scheduler
 
@@ -47,3 +48,28 @@ Moreover, project compares all these algorithms, the overall time it takes for t
 1. *C++17*,
 2. *CMake 3.16*,
 3. *[gtest](https://github.com/google/googletest) 1.10*
+
+## Page Replacement algorithms
+
+The program simulates behaviour of different paging algorithms that resolve issues with page errors when accessing page that was moved to the virtual memory.
+ALgorithms put into testing are:  
+* FIFO  
+* OPT (Optimal - the removing page is the one that is not going to be used for the longest time. Comparision algorithm with others)  
+* LRU  
+* Estimated LRU
+* RAND (For the comparison as a bare minimum of effectivness)
+
+The simulation involves such components as:
+* The size of virtual memory (and the way it's split into pages),
+* The size of physical memory (same as above), 
+* Segments Table,
+* Usage of logic addresses that get converted into physical ones by segments table
+
+Moreover because of how the real orders to the Memory are made, there are at least two rules that must be preserved:
+* Locality of reference,
+* Symmetry of the sequence.
+
+**Additional Info**
+1. *C++17*
+2. *CMake 3.16*
+
